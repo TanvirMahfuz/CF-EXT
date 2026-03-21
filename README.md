@@ -50,3 +50,25 @@ You can access the live version of the app here:
 * Make sure you have **Node.js** installed (v18+ recommended).
 * For any environment variables, check `.env.example` and create a `.env` file.
 
+---
+
+## SEO Setup
+
+This project includes basic SEO configuration for Google indexing:
+
+1. **Meta tags** - Added in `index.html` (title, description, keywords, Open Graph, Twitter cards)
+2. **robots.txt** - Located at `public/robots.txt` - allows all crawlers
+3. **sitemap.xml** - Located at `public/sitemap.xml` - tells Google about your pages
+4. **Favicon** - Located at `public/favicon.svg`
+
+### Before Going Live
+
+1. **Generate OG Image** - Create a 1200x630px image at `public/og-image.png` for social sharing previews
+2. **Submit to Google Search Console**:
+   - Visit [Google Search Console](https://search.google.com/search-console)
+   - Add your site (cf-ext.netlify.app)
+   - Submit the sitemap at `https://cf-ext.netlify.app/sitemap.xml`
+   - Request indexing
+
+3. **Update sitemap.xml** - If you add new routes, update the sitemap with those pages.
+
